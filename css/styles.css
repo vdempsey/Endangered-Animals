@@ -1,0 +1,191 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+h5 {
+  font-size: 14px;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+}
+
+#masthead {
+  margin: auto;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  background-color: #404040;
+  box-shadow: 0px 4px 3px #888888;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  opacity: 0.9;
+
+}
+
+.red {
+  color: #ed3d1e;
+}
+
+.logo {
+  float: left;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-top: 10px;
+  padding: 15px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.navigation {
+  float: right;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+
+.navigation li, .navigation a {
+  display: inline;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #404040;
+  margin-top: 30px;
+}
+
+#content {
+  background-image: url("../img/map1200bw.jpg");
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 800px;
+  margin: auto;
+  color: #404040;
+  position: relative;
+  /*z-index: -1;*/
+}
+
+img.photo {
+  margin: auto;
+  display: block;
+}
+
+.animal-1 p, .animal-2 p, .animal-3 p {
+  padding: 0px 20px 0px 20px;
+}
+
+.animal-1 h3, .animal-2 h3, .animal-3 h3, .animal-4 h3, .animal-5 h3 {
+  text-align: center;
+}
+
+a.more {
+  color: #ed3d1e;
+}
+
+.animal-1 {
+  width: 120px;
+  background-color: white;
+  font-size: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 280px;
+  left: 520px;
+  transition: 0.5s ;
+  opacity: 0.7;
+}
+
+.animal-2 {
+  width: 120px;
+  background-color: white;
+  font-size: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 120px;
+  left: 200px;
+  transition: 0.5s ;
+  opacity: 0.7;
+}
+
+.animal-3 {
+  width: 120px;
+  background-color: white;
+  font-size: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 120px;
+  right: 320px;
+  transition: 0.5s ;
+  opacity: 0.7;
+}
+
+
+/*hover styles*/
+
+.animal-1:hover {
+  width: 300px;
+  opacity: 1.0;
+  font-size: 14px;
+  top: 150px;
+  left: 37%;
+  z-index: 3;
+}
+
+.animal-2:hover {
+  width: 300px;
+  opacity: 1.0;
+  font-size: 14px;
+  top: 120px;
+  left: 10%;
+  z-index: 3;
+}
+
+.animal-3:hover {
+  width: 300px;
+  opacity: 1.0;
+  font-size: 14px;
+  top: 120px;
+  right: 20%;
+  z-index: 3;
+}
+
+.animal-1:hover p::before {
+  content: 'The African lion is the second largest living feline species after the tiger. It is found in sub-Saharan Africa and Asia. Because of the beauty and strength of this creature, it is nicknamed the "king of the jungle." ';
+}
+
+.animal-2:hover p::before {
+  content: 'Bighorn sheep can be found in British Columbia, Washington, Oregon, Idaho, California, Nevada, Utah, and North Dakota. Adult males grow up to six feet in length from the head to the tail, they stand up to 3.5 feet tall at the shoulder, and they can weigh up to 275 lb.';
+}
+
+.animal-3:hover p::before {
+  content: 'The mountain weasel (Mustela altaica), also known as the pale weasel, Altai weasel or solongoi, primarily lives in high-altitude environments, as well as rocky tundra and grassy woodlands.';
+}
+
+#footer {
+  text-align: center;
+  font-size: 12px;
+  color: #848484;
+}
